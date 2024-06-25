@@ -4,6 +4,10 @@ class fg:
         return f"\033[30m{text}\033[0m"
 
     @staticmethod
+    def purple(text):
+        return f"\033[38;5;93m{text}\033[0m"
+
+    @staticmethod
     def red(text):
         return f"\033[31m{text}\033[0m"
 
@@ -73,6 +77,10 @@ class bg:
     def black(text):
         return f"\033[40m{text}\033[0m"
 
+    @staticmethod
+    def purple(text):
+        return f"\033[48;5;93m{text}\033[0m"
+    
     @staticmethod
     def red(text):
         return f"\033[41m{text}\033[0m"
