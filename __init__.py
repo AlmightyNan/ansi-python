@@ -3,6 +3,7 @@ import subprocess
 import json
 from .lib.colors import fg, bg
 from .lib.styles import underline, bold, italic, inverse, hidden, strikethrough
+from .lib.extras import rainbow, zebra, trap, freaky
 
 if not os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests", "ansi_test.json")):
     if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tests", "index.py")):
@@ -26,6 +27,10 @@ __all__ = [
     "inverse",
     "hidden",
     "strikethrough",
+    "rainbow",
+    "zebra",
+    "trap",
+    "freaky"
 ]
 
 __version__ = "0.1.0"
